@@ -38,7 +38,7 @@ public class FormTest {
     @Test
     void shouldCallbackTest() {
         // загрузка страницы
-        driver.get("http://http://localhost:9999/");
+        driver.get("http://localhost:9999");
         driver.findElement((By.cssSelector("[data-test-id=name] input"))).sendKeys("Петров Яков");
         driver.findElement((By.cssSelector("[data-test-id=phone] input"))).sendKeys("+79991234567");
         driver.findElement((By.cssSelector("[data-test-id=agreement]"))).click();
