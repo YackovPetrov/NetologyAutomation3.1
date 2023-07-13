@@ -23,10 +23,10 @@ public class FormTest {
     @BeforeEach
     void setUp() {
         ChromeOptions options = new ChromeOptions();
-            options.addArguments("--disable-dev-shm-usage");
-            options.addArguments("--no-sanbox");
-            options.addArguments("--headless");
-            driver = new ChromeDriver();
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--headless");
+        driver = new ChromeDriver(options);
     }
 
     @AfterEach
